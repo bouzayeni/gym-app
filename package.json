@@ -6,9 +6,9 @@
   "scripts": {
     "build": "cd client && npm install && npm run build",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build",
-    "devback": "node server/server.js",
+    "devback": "node server.js",
     "front": "cd client && npm start",
-    "back": "nodemon server/server.js",
+    "back": "nodemon server.js",
     "start": "concurrently \"npm run front\" \"npm run back\""
   },
   "keywords": [],
