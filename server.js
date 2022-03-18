@@ -1,3 +1,4 @@
+const host = require ('express')
 const express = require ('express')
 const app = express();
 const path = require('path');
@@ -18,7 +19,7 @@ app.get("/", (req, res) => {
 
 
 const cors = require('cors');
-app.use(cors('https://gym--application.herokuapp.com/'));
+app.use(cors(process.env.API_URL));
 
 
 // routes
