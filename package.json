@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "cd client && npm install && npm start",
+    "build": "cd client && npm install && npm run build",
     "start": "node server.js",
-    "front": "cd client && npm install && npm start",
+    "front": "cd client && npm install && npm run build",
     "back": "node server.js",
     "dev": "concurrently \"npm run front\" \"npm run back\""
   },
