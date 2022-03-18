@@ -6,7 +6,7 @@ export const registerUser = createAsyncThunk(
   async (info, { rejectWithValue }) => {
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/api/person/register",
+        "https://gym--application.herokuapp.com/api/person/register",
         info.data
       );
       info.navigate("/Login");
@@ -22,7 +22,7 @@ export const loginUser = createAsyncThunk(
   async (info, { rejectWithValue }) => {
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/api/person/login",
+        "https://gym--application.herokuapp.com/api/person/login",
         info.data
       );
       data.role === "user"
@@ -43,7 +43,7 @@ export const loadUserInfo = createAsyncThunk(
   async (info, { rejectWithValue }) => {
     try {
       const { data } = await axios.get(
-        "http://localhost:5000/api/person/personInfo",
+        "https://gym--application.herokuapp.com/api/person/personInfo",
         {
           headers: {
             token: localStorage.getItem("token"),
@@ -84,7 +84,7 @@ export const updateProfilePicture = createAsyncThunk(
       const formPic = new FormData();
       formPic.append('profilePicture',file);
        await axios.put(
-        "http://localhost:5000/api/person/profilePic",
+        "https://gym--application.herokuapp.com/api/person/profilePic",
         formPic,
         {
           headers: {
