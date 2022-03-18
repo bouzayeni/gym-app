@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "nodemon server.js",
+    "build": "concurrently \"npm run back\" \"npm run front\" ",
     "start": "node server.js",
     "front": "cd client && npm start",
-    "back": "nodemon server.js",
+    "back": "node server.js",
     "dev": "concurrently \"npm run front\" \"npm run back\""
   },
   "keywords": [],
