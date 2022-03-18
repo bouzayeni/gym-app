@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server/server.js",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "build": "cd client && npm install && npm run build",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build",
+    "devback": "node server/server.js",
+    "front": "cd client && npm start",
+    "back": "nodemon server/server.js",
+    "start": "concurrently \"npm run front\" \"npm run back\""
   },
   "keywords": [],
   "author": "",
