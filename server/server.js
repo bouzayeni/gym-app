@@ -7,6 +7,7 @@ const connectDB = require('./config/connectDB');
 connectDB();
 
 app.use(express.json());
+app.use(express.static(path.resolve(__dirname, "./client/build")));
 
 
 
