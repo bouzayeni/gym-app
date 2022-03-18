@@ -1,0 +1,340 @@
+.container {
+  max-width: 600px;
+  width: 100%;
+  /* background-color: #fff; */
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  margin-top: 7%;
+  margin-left: 27%;
+  background-image: linear-gradient(#000,#fff);
+
+}
+.container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+/*.container .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 50px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #242122, #757a9c);
+}*/
+.content form .user-details {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  /*flex-wrap: wrap;*/
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+  border-color: #201c1d;
+}
+form .gender-details .gender-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+form .category {
+  display: flex;
+  width: 80%;
+  margin: 14px 0;
+  justify-content: space-between;
+}
+form .category label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+form .category label .dot {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three {
+  background: #b8405e;
+  border-color: #d9d9d9;
+}
+form input[type="radio"] {
+  display: none;
+}
+form .button {
+  height: 45px;
+  margin: 35px 0;
+}
+form .button input {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #292627, #3a3c4e);
+}
+form .button input:hover {
+  /* transform: scale(0.99); */
+  background: linear-gradient(-135deg, #292627, #3a3c4e);
+}
+.all {
+  display:block;
+}
+.BMI {
+  font-family: sans-serif;
+  text-align: center;
+}
+.mal {
+   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 100%;  */
+  
+  
+
+}
+/*.cont {
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  justify-content:space-around;
+
+
+}*/
+.cont{
+position: relative;
+width:900px;
+display:flex;
+justify-content:center;
+justify-content:space-around;
+flex-wrap: wrap;
+}
+.cont .box{
+  position: relative;
+  width:275px;
+  height:275px ;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.cont .box:hover{
+  z-index: 1;
+  transform:scale(1.25);
+  box-shadow: 0 25px 40px rgba(0,0,0,.5);
+}
+.cont .box .imgBx{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100% ;
+}
+.cont .box .imgBx::before{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100% ;
+  z-index: 1;
+  background: linear-gradient(180deg,#f00,#000);
+  mix-blend-mode: multiply;
+  opacity: 0;
+  transition: 0.2s;
+}
+.cont .box:hover .imgBx::before{
+  opacity:1;
+}
+.cont .box .imgBx img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100% ;
+  object-fit: cover;
+  
+}
+.cont .box .content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100% ;
+  z-index: 2;
+  display: flex;
+  padding: 20px;
+  align-items: flex-end;
+}
+.cont .box .content h2{
+  color: #fff;
+  transition: 0.5s;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 20px;
+  transform:translateY(150px)
+
+}
+.cont .box:hover .content h2{
+  transform:translateY(0);
+  transition-delay: 0.2s;
+}
+.cont .box .content p{
+  color: #fff;
+  transform:translateY(150px);
+  transition: 0.5s;
+  font-size: 14px;
+}
+.cont .box:hover .content p{
+  transform:translateY(0);
+  transition-delay: 0.2s;
+}
+.pro{
+  background-image:url('https://www.my-gym.tn/wp-content/uploads/2016/10/about-fitness-img.png');
+
+}
+.bloc-BMI {
+  display: flex;
+  flex-direction: row;
+}
+.img-BMI {
+width: 20px;
+height:20px ;
+}
+.tab {
+width: 80%;
+text-align: center; 
+margin-left: auto;
+margin-right: auto;
+
+
+
+}
+/* .background {
+  opacity: 0.5;
+  background-image: url('https://images-eu.ssl-images-amazon.com/images/I/41Mz3u0CGJL._SR600%2C315_PIWhiteStrip%2CBottomLeft%2C0%2C35_SCLZZZZZZZ_FMpng_BG255%2C255%2C255.jpg') 
+} */
+.layer {
+  opacity: 0.9;
+}
+
+
+/* .carousel {
+height: 100vh;
+min-height: 350px;
+background: no-repeat center center scroll;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}  */
+/* start profile */
+/* end profile */
+.profile{
+  display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.containerProfile {
+  height: 450px;
+  width: 300px;
+  box-shadow: 0 10px 20px black;
+  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  font-family: 'Abel', sans-serif;
+}
+
+.image {
+  height: 100px;
+  width: 100px;
+  background-image: url('https://images.wallpaperscraft.com/image/man_silhouette_night_barbed_wire_115312_1280x720.jpg');
+  background-size: cover;
+  border-radius: 50%;
+  border: 8px solid white;
+  position: relative;
+  top: 200px;
+  margin-left: 80px;
+  box-shadow: 0 2px 15px rgb(58, 54, 54);
+  transform: rotate(-20deg);
+}
+
+.shape {
+  height: 250px;
+  width: 400px;
+  background-color: black;
+  margin-left: -20px;
+  position: relative;
+  top: -80px;
+  box-shadow: 0 2px 15px black;
+  transform: rotate(25deg);
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+  color: rgb(90, 85, 95);
+}
+
+p {
+  padding-left: 30px;
+  padding-right: 30px;
+  color: rgb(105, 100, 109);
+}
+
+.icons {
+  margin-top: 15px;
+}
+
+.icons i {
+  margin-left: 10px;
+  font-size: 20px;
+  transition: 0.3s;
+  color: rgb(40, 163, 194);
+  ;
+}
+
+.icons i:hover {
+  transform: scale(1.1);
+  color: rgb(18, 192, 235);
+}
+.blank {
+  height:20px
+}

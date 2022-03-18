@@ -1,0 +1,97 @@
+.footer {
+  background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url('https://bloganchoi.com/wp-content/uploads/2020/04/cach-tao-dong-luc-tap-gym.jpg');
+    /*background-color: #030000ec;*/
+    text-align: center;
+    background-size: cover;
+    height: 240px;
+    
+  }
+  .footer .Mylinks {
+    margin-top: 3%;
+  }
+  .footer .Mylinks dav {
+    width: 5%;
+    height:5%;
+  }
+  .footer .copyright p {
+    /*padding-bottom: 0%;*/
+    color: rgb(234, 233, 240);
+    font-weight: 400;
+    font-size: 14px;
+    padding-bottom: 0;
+  }
+  .footer .copyright {
+    text-decoration: none;
+  }
+  .nav {
+     text-align: center; 
+    position: fixed;
+    top: 0;
+    height:35px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap !important; 
+    max-width: 50%;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: end;
+    padding-right: 50px;
+    z-index: 999;
+    background-color:transparent;
+    margin: 0 auto;
+  }
+  .nav .Mylink {
+    /*display:flex;
+    justify-content:flex-end;*/
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 2% 0 2%;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .nav .Mylink:hover {
+    color: red;
+  }
+  header{
+    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    position: fixed !important;
+    top: 0;
+    background-color: rgb(3, 3, 3);
+    height: 50px;
+    width: 100%;
+    z-index: 999;
+
+  }
+ .logo {
+  transform: translateX(-350px);
+    display: inline-block;
+    background-color:transparent;
+    vertical-align: top;
+    width: 39px;
+    height: 30px;
+    margin-right: 20px;
+    
+    margin-top: 6px;    /* if you want it vertically middle of the navbar. */
+}
+.footer h3  {
+color: rgb(95, 17, 17)
+}
+.footer p  {
+  color: rgb(95, 17, 17)
+  }
+  header h2:first-letter{
+    
+    margin-left: 5px;
+  color: #8F111F;
+
+  }
+  .atef{
+    background-image: url("https://www.discovery.co.za/gallery/discoverycoza/content-hub/coronavirus-covid19-disease/to-gym-or-not-to-gym-banner-720x350.jpg");
+  }
+  .logout{
+margin-right: -303px;
+padding-left: 10px;
+  }
+  

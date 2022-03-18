@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7ad1558a.css",
+    "main.js": "/static/js/main.0ab15773.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/image4.png": "/static/media/image4.57302832873d50659cfc.png",
+    "static/media/image3.png": "/static/media/image3.b85a4441e487a1ec3fdf.png",
+    "static/media/image2.png": "/static/media/image2.0c8829f189a9707d1902.png",
+    "static/media/image8.png": "/static/media/image8.0971c9704a55a38cccf8.png",
+    "static/media/image1.png": "/static/media/image1.6bfcd693a015aaa4a4a7.png",
+    "static/media/image5.png": "/static/media/image5.c0d2042a93c89a601f6c.png",
+    "static/media/image7.png": "/static/media/image7.a6f8df2a909e33b300eb.png",
+    "static/media/image6.png": "/static/media/image6.6840e9d4a1aa6a187ca6.png",
+    "static/media/Gym-logo.png": "/static/media/Gym-logo.6f870244adf0a194d752.png",
+    "index.html": "/index.html",
+    "main.7ad1558a.css.map": "/static/css/main.7ad1558a.css.map",
+    "main.0ab15773.js.map": "/static/js/main.0ab15773.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ad1558a.css",
+    "static/js/main.0ab15773.js"
+  ]
+}
