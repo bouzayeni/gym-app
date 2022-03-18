@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 
 
 const cors = require('cors');
-app.use(cors('http://localhost:3000'));
+app.use(cors('https://gym--application.herokuapp.com/'));
 
 
 // routes
