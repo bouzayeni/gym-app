@@ -7,7 +7,7 @@ export const loadUserInfos = createAsyncThunk(
     async (info, { rejectWithValue }) => {
       try {
         const { data } = await axios.get(
-          "http://localhost:5000/api/admin/personInfos",
+          "/api/admin/personInfos",
           {
             headers: {
               token: localStorage.getItem("token"),

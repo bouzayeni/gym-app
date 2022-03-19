@@ -6,7 +6,7 @@ export const getPosts = createAsyncThunk(
   async (info, { rejectWithValue }) => {
     try {
       const { data } = await axios.get(
-        "http://localhost:5000/api/post",{
+        "/api/post",{
           headers: {
             token: localStorage.getItem("token"),
           },
@@ -25,7 +25,7 @@ export const getPostsByOwner = createAsyncThunk(
   async (id, { rejectWithValue }) => {
     try {
       const { data } = await axios.get(
-        "http://localhost:5000/api/post?id="+id,{
+        "/api/post?id="+id,{
           headers: {
             token: localStorage.getItem("token"),
           },
@@ -44,7 +44,7 @@ export const addNewPost = createAsyncThunk(
   async (postInfo, { rejectWithValue,dispatch }) => {
     try {
        const {data} =await axios.post(
-        "http://localhost:5000/api/post",postInfo,)
+        "/api/post",postInfo,)
         return  dispatch(getPosts());
     } catch (errors) {
       return rejectWithValue(errors.response.data.msg);
@@ -57,7 +57,7 @@ export const deletePost = createAsyncThunk(
   async (postId, { rejectWithValue,dispatch }) => {
     try {
        const {data} =await axios.delete(
-        "http://localhost:5000/api/post?id="+postId,
+        "/api/post?id="+postId,
         {
           headers: {
             token: localStorage.getItem("token"),}})
@@ -73,7 +73,7 @@ export const updatePost = createAsyncThunk(
   async (postInfo, { rejectWithValue,dispatch }) => {
     try {
        const {data} =await axios.put(
-        "http://localhost:5000/api/post?id="+postInfo.id,postInfo,
+        "/api/post?id="+postInfo.id,postInfo,
         {
           headers: {
             token: localStorage.getItem("token"),}})
@@ -89,7 +89,7 @@ export const addComment = createAsyncThunk(
   async (commentInfo, { rejectWithValue,dispatch }) => {
     try {
        await axios.post(
-        `http://localhost:5000/api/comment/newcomment/${commentInfo.postId}`,
+        `/api/comment/newcomment/${commentInfo.postId}`,
         {desc:commentInfo.desc},
         {
           headers: {
@@ -110,7 +110,7 @@ export const deleteComment = createAsyncThunk(
   async (info, { rejectWithValue,dispatch }) => {
     try {
        await axios.delete(
-        `http://localhost:5000/api/comment/${info.postId}/${info.commentId}`
+        `/api/comment/${info.postId}/${info.commentId}`
         ,
         {
           headers: {

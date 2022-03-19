@@ -6,7 +6,7 @@ export const registerUser = createAsyncThunk(
   async (info, { rejectWithValue }) => {
     try {
       const { data } = await axios.post(
-        process.env.host +"/api/person/register",
+        "/api/person/register",
         info.data
       );
       info.navigate("/Login");
@@ -22,7 +22,7 @@ export const loginUser = createAsyncThunk(
   async (info, { rejectWithValue }) => {
     try {
       const { data } = await axios.post(
-        process.env.API_URL +"/api/person/login",
+        "/api/person/login",
         info.data
       );
       data.role === "user"
@@ -43,7 +43,7 @@ export const loadUserInfo = createAsyncThunk(
   async (info, { rejectWithValue }) => {
     try {
       const { data } = await axios.get(
-        process.env.API_URL +"/api/person/personInfo",
+        "/api/person/personInfo",
         {
           headers: {
             token: localStorage.getItem("token"),
@@ -84,7 +84,7 @@ export const updateProfilePicture = createAsyncThunk(
       const formPic = new FormData();
       formPic.append('profilePicture',file);
        await axios.put(
-        process.env.API_URL +"/api/person/profilePic",
+        "/api/person/profilePic",
         formPic,
         {
           headers: {

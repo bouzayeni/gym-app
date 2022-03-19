@@ -6,6 +6,10 @@ import reportWebVitals from './reportWebVitals';
 import store from "./store";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
+import axios from "axios";
+
+// axios.defaults.baseURL = "http://localhost:5000",
+axios.defaults.baseURL = "https://gym--application.herokuapp.com"
 
 ReactDOM.render(
   <BrowserRouter>
