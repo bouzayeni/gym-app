@@ -23,7 +23,7 @@ const PostAll = ({title,description,owner,_id,comments}) => {
   
   return (
     <div style={{margin:'0 auto'}}>
-        <Card style={{ width: '300px', margin:'0 300px',backgroundImage: 'linear-gradient(#000,#fff)' }}>
+        <Card style={{ width: '300px', margin:'0 485px',backgroundImage: 'linear-gradient(#000,#fff)' }}>
         <div
         style={{ display:'flex',justifyContent: 'space-between',flexDirection:'row',padding: '5px 10px'}}
         >
