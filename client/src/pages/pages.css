@@ -137,6 +137,7 @@ form .button input:hover {
 }*/
 .cont{
 position: relative;
+margin:0 230px;
 width:900px;
 display:flex;
 justify-content:center;
